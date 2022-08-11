@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .root{
+            display: block;
+            background-color: black;
+            justify-content: center;
+            width: 100%;
+        }
+        img{
+            display:block;
+            margin:auto;
+            padding: 5%;
+        }
+        .img_button{
+            display:block;
+            margin:auto;
+            padding-top: 20%;            
+        }
+        .background{
+            background-color: black;
+            color: white;
+            font-size: 45px;
+            display: flex; 
+            justify-content: center; 
+            width: 100%;
+            padding-bottom: 2%;
+        }
+        #link{
+            color: white;
+            font-size: 25px;
+            display: flex; 
+            justify-content: center; 
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="root">
+    <img class="img" src="../sources\img\109081430.png" width="200">
+    <a href="html/index.html">
+        <img class="img_button" src="../sources/img/turnOn.png" width="40px" height="40px">
+    </a>
+    <img class="img" src="../sources/img/ubuntu_white_hex.svg" width="300">
+    <div class="loader"></div>
+    <div class="background">ToroHack</div>
+    <a id="link" href="https://www.github.com/ToroHack" target="_blank">Github</a></div>
+
+    <script>
+        var dropBotton = document.querySelector(".img_button"); 
+        dropBotton.addEventListener("click", function(e) {
+            e.target.style.display = 'none';
+        });
+    </script>
+</body>
+</html>
